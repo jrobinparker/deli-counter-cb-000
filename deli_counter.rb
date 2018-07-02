@@ -17,10 +17,10 @@ end
 
 def take_a_number(katz_deli, name)
   
-  if katz_deli.empty?
-    katz_deli.unshift(name)
-  elsif katz_deli.any?
+  if katz_deli.any? == true
     katz_deli.push(name)
+  else
+    katz_deli.unshift(name)
   end
   
   katz_deli.each_with_index do |name, index|
