@@ -17,7 +17,7 @@ end
 
 def take_a_number(katz_deli, name)
   
-  if katz_deli.any? === true
+  if katz_deli.empty? === false
     katz_deli << name
   else
     katz_deli.unshift(name)
