@@ -17,7 +17,7 @@ end
 
 def take_a_number(katz_deli, name)
   
-  if katz_deli.any? == true
+  if katz_deli.any? === true
     katz_deli.push(name)
   else
     katz_deli.unshift(name)
